@@ -1,0 +1,22 @@
+CREATE TABLE clothes(id integer primary key, medium text, brand text, price integer);
+
+INSERT INTO clothes VALUES (1, "Joggers", "Nike", 10);
+INSERT INTO clothes VALUES (2, "Hoddie", "Addidas", 5);
+INSERT INTO clothes VALUES (3, "Shoes", "Nike", 20);
+INSERT INTO clothes VALUES (4, "Hat", "Plain", 5);
+INSERT INTO clothes VALUES (5, "Pants", "Addidas", 12);
+INSERT INTO clothes VALUES (6, "Shirt", "Reebok", 15);
+INSERT INTO clothes VALUES (7, "Sweater", "Nike", 10);
+INSERT INTO clothes VALUES (8, "Beanie", "Plain", 2);
+INSERT INTO clothes VALUES (9, "Gloves", "Plain", 5);
+INSERT INTO clothes VALUES (10, "Shades", "Plain", 2);
+INSERT INTO clothes VALUES (11, "Underwear", "Fruit of the Loom", 5);
+INSERT INTO clothes VALUES (12, "Sweatpants", "Nike", 20);
+INSERT INTO clothes VALUES (13, "Sweatshirt", "Nike", 20);
+INSERT INTO clothes VALUES (14, "Socks", "Plain", 20);
+INSERT INTO clothes VALUES (15, "Tights", "Gymshark", 30);
+
+
+
+SELECT SUM(PRICE) FROM clothes;
+SELECT * FROM clothes ORDER BY PRICE;
